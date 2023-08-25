@@ -1,0 +1,33 @@
+@import '~bootstrap/scss/bootstrap';
+@import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* PROJECT INDEX SYTLE */
+.btns{
+    display: flex;
+    width: 100%;
+
+    a{
+        color: white;
+        display: flex;
+        margin-right: 5px;
+        i{
+            width: 70%;
+            align-self: center;
+            justify-self: center;
+        }
+        &:last-child{
+            margin-right: none;
+        }
+        &:hover{
+            color: white;
+        }
+    }
+}
+/* PROJECT SHOW SYTLE */
+/* PROJECT CREATE SYTLE */
