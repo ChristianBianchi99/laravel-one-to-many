@@ -4,9 +4,14 @@
     <div class="container">
         <div class="row my-5">
             <div class="col-12 my-3">
-                <h2>
-                    {{ $project->name }}
-                </h2>
+                <div class="d-flex">
+                    <h2>
+                        {{ $project->name }}
+                    </h2>
+                    @if(isset($project->type_id))
+                        <span class="badge text-bg-info align-self-center ms-3">{{ $project->type->name }}</span>
+                    @endif
+                </div>
                 <p>
                     {{ $project->description }}
                 </p>

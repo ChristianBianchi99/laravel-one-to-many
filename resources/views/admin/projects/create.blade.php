@@ -33,6 +33,12 @@
                         <span class="input-group-text">Cover image</span>
                         <input name="cover_image" id="cover_image" type="file" class="form-control" id="inputGroupFile02">
                     </div>
+                    <select name="type_id" id="type_id" class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        @foreach ($types as $type)
+                            <option value="{{ $type->id }}">{{ $type->name }}</option>
+                        @endforeach
+                    </select>
                     <div class="btns justify-content-end my-3">
                         <button type="submit" class="btn btn-primary mx-3">
                             Aggiungi
